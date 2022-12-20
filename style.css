@@ -1,0 +1,726 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&family=Prompt:wght@300&;400display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+@import url('https://fonts.cdnfonts.com/css/verlag');
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #040504;
+  border-radius: 5rem;
+}
+
+
+body {
+  background: rgb(0, 0, 0);
+  overflow-x: hidden;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgb(0, 0, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem 9%;
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  color: rgb(109, 109, 109);
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+
+
+.logo {
+  font-size: 4rem;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+}
+
+#menu-btn {
+  font-size: 5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.home {
+  margin: 0 auto;
+  margin-top: 9rem;
+  width: 90%;
+  border-radius: 1rem;
+
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 80vh;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.home .content {
+  text-align: center;
+}
+
+
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.about .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+  margin-bottom: 5rem;
+}
+
+.about .content h3 {
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  margin-top: .5rem;
+}
+
+
+
+.about .content img {
+  width: 40%;
+  max-width: 260px;
+}
+
+.about .content p {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+  line-height: 2;
+  font-family: 'Prompt', sans-serif;
+}
+
+.about .content a {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: #ffffff;
+  line-height: 2;
+  font-family: 'Prompt';
+  font-weight: bold;
+}
+
+.about .content img {
+  float: left ;
+ width: 100%;
+ height: 100%;
+}
+
+.about .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+  margin-bottom: 5rem;
+}
+
+.about .content h3 {
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  margin-top: .5rem;
+}
+
+.about .content img {
+  width: 40%;
+  max-width: 260px;
+}
+
+
+
+.profile {
+  background-color: #ffffff;
+
+background-position: center top;
+background-size: cover;
+background-repeat: no-repeat;
+padding: 150px 90px;
+text-align: center;
+}
+
+
+.profile a {
+  font-family: 'Noticia Text';
+}
+
+.profile .il {
+  font-family: 'Mukta Mahee'
+}
+
+.profile .box-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.profile .box-container .box{
+  text-align: center;
+  margin:1rem;
+  padding:2rem;
+  flex:1 1 33rem;
+}
+
+.profile .box-container .box:hover .image img {
+  transform: scale(1.2);
+  
+}
+
+.profile .box-container .box img{
+  height:450px;
+  width:300px;
+  padding:1rem;
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+}
+
+.profile .box-container .box video{
+  height:450px;
+  width:300px;
+  padding:1rem;
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+}
+
+
+.profile .box-container .box h3{
+  font-size: 2.5rem;
+  color:var(--black);
+  border-radius: 1rem;
+  width: 100%;
+  font-family: 'Hind Vadodara'
+}
+
+.profile marquee{
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: #000000;
+  font-family: sans-serif;
+  }
+
+  .profile marquee a{
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    font-family: sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
+  }
+
+.blogs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 5rem
+}
+.blogs .img-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+}
+
+.blogs .img-container img {
+  
+  width: 350px;
+}
+
+.blogs .heading {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+  margin-bottom: 5rem;
+}
+
+.blogs .heading2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+  margin-bottom: 5rem;
+}
+
+.blogs .heading h3 {
+  color: rgb(255, 255, 255);
+  font-size: 3.5rem;
+  margin-top: .5rem;
+}
+
+.blogs .heading p {
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: rgb(255, 253, 253);
+  line-height: 2;
+  font-family: 'Prompt', sans-serif;
+}
+
+.blogs .heading a {
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  line-height: 2;
+  font-family: 'Prompt';
+  font-weight: bold;
+}
+
+.blogs  img{
+  display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+}
+
+.blogs .heading2 p {
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  line-height: 2;
+  font-family: 'Prompt', sans-serif;
+}
+
+.blogs .heading2 a {
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: #ffffff;
+  line-height: 2;
+  font-family: 'Prompt';
+  font-weight: bold;
+}
+
+.blogs marquee{
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  font-family: sans-serif;
+  }
+  .blogs marquee a{
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: #100c0c;
+    font-family: sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffffff;
+  }
+
+  .IMPURITIES {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 5rem;
+    background-color: #ffffff;
+  }
+  
+  .IMPURITIES .content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 42rem;
+        flex: 1 1 42rem;
+margin-bottom: 5rem;
+  }
+  
+  .IMPURITIES .content h3 {
+    color: rgb(255, 82, 82);
+    font-size: 4rem;
+    margin-top: .5rem;
+  }
+  
+  .IMPURITIES .content p {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    line-height: 2;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  .IMPURITIES .content a {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #000000;
+    line-height: 2;
+    font-family: 'Prompt';
+    font-weight: bold;
+  }
+  
+  .IMPURITIES .content img {
+    display: none;
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+  }
+  
+  .IMPURITIES .yt {
+    width: 460; 
+    height: 450;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .blue-flame {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 5rem;
+    background-color: #000000;
+  }
+  
+  .blue-flame .content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 42rem;
+            flex: 1 1 42rem;
+    margin-bottom: 5rem;
+  }
+  
+  .blue-flame .content h3 {
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    margin-top: .5rem;
+  }
+  
+  .blue-flame .content p {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    line-height: 2;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  .blue-flame .content a {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #ffffff;
+    line-height: 2;
+    font-family: 'Prompt';
+    font-weight: bold;
+  }
+  
+  .blue-flame .content img {
+    display: none;
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+  }
+  
+  .blue-flame .content .yt {
+    height: 400px;
+    width: 55%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .webtoon {
+    background-color: #000000;
+  
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px 90px;
+  text-align: center;
+  }
+  
+  
+  .webtoon a {
+    font-family: 'Noticia Text';
+  }
+  
+  .webtoon .il {
+    font-family: 'Mukta Mahee'
+  }
+  
+  .webtoon .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .webtoon .box-container .box{
+    text-align: center;
+    margin:1rem;
+    padding:2rem;
+    flex:1 1 33rem;
+  }
+  
+  .webtoon .box-container .box:hover .image img {
+    transform: scale(1.2);
+    
+  }
+  
+  .webtoon .box-container .box img{
+    height:450px;
+    width:300px;
+    padding:1rem;
+    filter: drop-shadow(5px 5px 5px rgba(100, 100, 100, 0.5));
+  }
+  
+  .webtoon .box-container .box h3{
+    font-size: 2.5rem;
+    color:#fff;
+    border-radius: 1rem;
+    width: 100%;
+    font-family: 'Hind Vadodara'
+  }
+
+  .webtoon .box-container .box h2{
+    font-size: 2rem;
+    color:#fff;
+    border-radius: 1rem;
+    width: 100%;
+    font-family: 'Hind Vadodara'
+  }
+  
+  .webtoon marquee{
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    font-family: sans-serif;
+    }
+  
+    .webtoon marquee a{
+      font-size: 4.5rem;
+      font-weight: 800;
+      color: #ffffff;
+      font-family: sans-serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
+    }
+
+
+.footer .content p {
+  font-size: 2rem;
+  color: rgb(53, 53, 53);
+  padding: 1rem 0;
+  line-height: 2;
+  font-family: 'Prompt', sans-serif;
+}
+
+.footer .content a {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  padding: 1rem 0;
+  line-height: 2;
+  font-family: sans-serif;
+}
+
+.credit {
+  background: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem 1rem;
+  color: rgb(150, 150, 150);
+  text-align: left;
+}
+
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  .home .content{
+    width: 50;
+    padding: 1.5rem 2rem;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+
+  .blogs img {
+    padding: 1.5rem 2rem;
+    font-size: 55%;
+  }
+
+  .IMPURITIES {
+    padding: 1.5rem 2rem;
+    font-size: 55%;
+  }
+  
+  .IMPURITIES .content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+
+  .blue-flame .content img {
+    display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+  }
+
+  .IMPURITIES .yt {
+    width: 250;
+    height: 250;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+ 
+
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: rgb(255, 255, 255);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .navbar a {
+    margin: 2rem;
+    font-size: 2rem;
+    display: block;
+  }
+  .home {
+    margin-top: 10rem;
+  }
+  .home .content span {
+    font-size: 8vw;
+  }
+  .home .content h3 {
+    font-size: 9vw;
+  }
+
+  .blogs .img-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .IMPURITIES .content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+ 
+  .blue-flame .content img {
+    display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+  }
+
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .about .content h3 {
+    font-size: 3.5rem;
+  }
+
+  .blogs .heading h3 {
+    font-size: 3.5rem;
+  }
+
+  .about1 .heading h3 {
+    font-size: 3.5rem;
+  }
+
+  .blue-flame .content h3 {
+    font-size: 2.7rem;
+  }
+
+
+}
+/*# sourceMappingURL=style.css.map */

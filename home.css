@@ -1,0 +1,61 @@
+:root {
+    --color-white: #FFFFFF;
+    --color-black: #141414;
+    --color-gray: #808080;
+  }
+  
+  html {
+    background-color: var(--color-black);
+    line-height: 2;
+    overflow: hidden; /* Hide scrollbars */
+  }
+
+  div {
+    margin: 0 auto;
+  margin-top: 4rem;
+  width: 90%;
+  border-radius: 1rem;
+
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 80vh;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 4rem;
+  }
+
+
+
+  @media (max-width: 768px) {
+
+    .div {
+        margin-top: 10rem;
+    }
+
+    .img {
+        font-size: 50%;
+    }
+  
+  }
+
+  @media (max-width: 450px) {
+     
+    .div {
+        margin-top: 10rem;
+
+    }
+
+    
+
+    
+
+
+  }
